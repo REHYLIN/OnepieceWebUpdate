@@ -1,0 +1,288 @@
+    body {
+        background-color: rgba(rgba(12, 2, 151), rgba(1, 75, 211), rgba(53, 140, 253), rgba(255, 124, 124),rgba(255, 69, 69),rgba(255, 0, 0) alpha); 
+        animation: ColorFondo 1s infinite alternate; 
+    }
+
+    .imagen-derecha {
+    float: right; 
+    margin-left: 15px;
+  }
+
+    @keyframes ColorFondo {
+        0% {
+            background-color: #0407a7; 
+        }
+        50% {
+            background-color: #04479e; 
+        }
+        75% {
+            background-color: #ff5656; 
+        }
+    
+        100% {
+            background-color: #ff0000bb; 
+        }
+
+        200% {
+            background-color: #00d9ffbb; 
+        }
+          250% {
+            background-color: rgba(0, 89, 255, 0.733); 
+        }
+
+
+        }
+
+    p{
+        color: antiquewhite;
+    }
+
+    .movie{
+        color: rgb(190, 247, 255);
+    }
+
+    #movie2{
+        color: rgb(215, 255, 175);
+    }
+
+    .strenght{
+        color: rgb(177, 255, 247);
+    }
+
+    .Curiosidades{
+        color: rgb(255, 171, 171);
+    }
+    img {
+  cursor: pointer; 
+}
+
+button:hover {
+  cursor: n-resize; 
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+.thumbnail {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hidden-checkbox:checked ~ .modal {
+  display: block;
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+}
+
+.full-image {
+  width: 660px;
+  height: 500px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff0000;
+  cursor: pointer;
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.mi-imagen {
+  animation: slideOutLeft 12s infinite; 
+width: 660px;
+  height: 400px;
+
+}
+
+
+.scroll-container {
+  height: 500px; 
+  overflow: auto; 
+}
+
+.imagen {
+  display: block; 
+  position: sticky; 
+  top: 0; 
+  width: 50%; 
+}
+
+.imagen-visible {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes changeImage {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.imagen-visible.fade-out {
+  animation: changeImage 1s forwards; 
+}
+
+.pequeña {
+  width: 100px;
+  height: 100px;
+}
+.Gear5{
+width: 200px;
+height: 200px;
+  position: 100px
+
+}
+
+
+.ColorDeLetra{
+  color: rgb(243, 243, 196);
+}
+
+
+.boton-imagen-enlace {
+    display: inline-block;
+    text-decoration: none;
+    border: none;          
+    background-color: transparent; 
+    cursor: pointer;       
+    padding: 0;            
+    margin: 10px;      
+    transition: transform 0.2s ease; 
+}
+
+.boton-imagen-enlace img {
+    width: 100px; 
+    height: auto; 
+    display: block; 
+}
+
+.boton-imagen-enlace:hover {
+    transform: scale(1.05);
+}
+
+.boton-imagen-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.boton-imagen-btn button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.boton-imagen-btn button img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.boton-imagen-btn:hover {
+    opacity: 0.8; 
+}
+
+.mi-imagen2 {
+  animation: slideOutLeft 10s infinite; 
+width: 200px;
+  height: 150px;
+
+}
+
+.mi-imagen3 {
+  animation: slideOutLeft 10s infinite; 
+width: 200px;
+  height: 150px;
+
+}
+
+.mi-imagen4 {
+  animation: slideOutLeft 10s infinite; 
+width: 200px;
+  height: 150px;
+
+}
+
+.body2 {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    color: rgb(241, 241, 241);
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.representantes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.representante {
+    border: 2px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.representante img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.representante p {
+  font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px
+    ;}
+    
+
+
+
